@@ -62,8 +62,13 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-openclash luci-compat kmod-tun kmod-i
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-wol-zh-cn"
 # 自定义命令
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-commands-zh-cn"
-彻底启用 AdGuardHome 及其中文语言包
+
+#彻底启用 AdGuardHome 及其中文语言包
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-adguardhome"
+
+# 5. 【已新增：图形化国内软件源切换菜单】
+# 这会在“系统”菜单下自动生成一个“软件包源设置”，让你一键切换中科大/清华等国内镜像
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-autorepeater"
 #===========================以下imm仓库内的软件==============================↓
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3cat-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3ginfo-lite-zh-cn"
