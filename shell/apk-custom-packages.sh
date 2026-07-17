@@ -63,7 +63,7 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-openclash luci-compat kmod-tun kmod-i
 # 自定义命令
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-commands-zh-cn"
 彻底启用 AdGuardHome 及其中文语言包
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-adguardhome luci-i18n-adguardhome-zh-cn"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-adguardhome"
 #===========================以下imm仓库内的软件==============================↓
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3cat-zh-cn"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-3ginfo-lite-zh-cn"
