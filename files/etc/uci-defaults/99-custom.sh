@@ -74,11 +74,12 @@ elif [ "$count" -gt 1 ]; then
     uci set network.wan.device="$wan_ifname"
     uci set network.wan.proto='dhcp'
 
-    # 配置WAN6
+    # 配置WAN6 (禁用 IPv6)
     uci set network.wan6=interface
     uci set network.wan6.device="$wan_ifname"
-    uci set network.wan6.proto='dhcpv6'
-
+    uci set network.wan6.proto='none'
+    uci set network.wan6.disabled='1'
+    
     # 查找 br-lan 设备 section
     section=$(uci show network | awk -F '[.=]' '/\.@?device\[\d+\]\.name=.br-lan.$/ {print $2; exit}')
     if [ -z "$section" ]; then
