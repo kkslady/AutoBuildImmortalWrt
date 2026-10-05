@@ -26,6 +26,10 @@ PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+# 科学上网与去广告 (OpenClash + AdGuard Home)
+PACKAGES="$PACKAGES luci-app-openclash"
+PACKAGES="$PACKAGES luci-app-adguardhome luci-i18n-adguardhome-zh-cn"
+PACKAGES="$PACKAGES luci-app-passwall luci-i18n-passwall-zh-cn"
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
